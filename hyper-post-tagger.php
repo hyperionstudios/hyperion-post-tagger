@@ -32,6 +32,5 @@ function hyperion_tag_post_now() {
 	foreach ( $recent_posts as $recent_post ) {
 		wp_set_post_tags( $recent_post->ID, 'tweet', true );
 	}
-	wp_mail( 'admin@hyperionstudios.com.au' , 'Tagged' , 'tagged' );
 
 }
